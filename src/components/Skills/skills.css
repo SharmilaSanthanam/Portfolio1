@@ -1,0 +1,25 @@
+.a-img1, .a-img2, .a-img3, .a-img4, .a-img5, .a-img6, .a-img7 {
+    width: clamp(50%, 500px, 90%);
+    height: min(50%,300px);
+       
+      align-items: center;
+      justify-content: center;
+      overflow: scroll;
+      animation: move 30s ease-in-out infinite alternate;
+
+}
+
+ @keyframes move {
+    25% {
+      transform: translateY(80px);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+    75% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
